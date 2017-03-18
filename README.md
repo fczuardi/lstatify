@@ -17,6 +17,14 @@ into:
 var size = 304;
 ```
 
+alternatively you can use one of the options below to make your 
+linter ignore the fact that you havent required fs
+
+```
+var size2 = window.lstatSync('./README.md').size;
+var size3 = global.lstatSync('./README.md').size;
+```
+
 ## limitations
 
 This is a really basic and dumb transform, that will eval the lstatSync call and inline the result,
