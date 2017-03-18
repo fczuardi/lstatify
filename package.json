@@ -1,0 +1,23 @@
+{
+  "name": "lstatify",
+  "version": "1.0.0",
+  "description": "browserify transform that replaces fs.lstatSync('./my/file').something with it's value. Useful for inlining file sizes.",
+  "main": "index.js",
+  "repository": "https://github.com/fczuardi/lstatify.git",
+  "author": "Fabricio C Zuardi <fabricio@fabricio.org>",
+  "license": "MIT",
+  "dependencies": {
+    "through2": "^2.0.3"
+  },
+  "keywords": [
+      "browserify-transform",
+      "fs",
+      "stats",
+      "file size",
+      "filesystem",
+      "filesize"
+  ],
+  "devDependencies": {
+    "browserify": "^14.1.0"
+  }
+}
